@@ -1,27 +1,23 @@
+:root {
+	--theme-primary-color: #02699c;
+	--theme-secondary-background: #1a1a1a;
+	--primary-color: #faf8ff;
+}
+
+span.svg,
+span.svg > svg {
+	height: 1em;
+	width: 1em;
+	fill: currentColor;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
+	background-color: var(--theme-secondary-background);
+	color: var(--primary-color);
 	min-height: 100vh;
-	display: flex;
-	background-color: #f4f4f4;
-}
-
-div {
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border: 2px solid #4677d5;
-	padding: 2rem;
-	box-shadow: 2px 2px 10px black;
-	background-color: #ffffff;
-}
-
-h1 {
-	text-align: center;
-	color: #4677d5;
-}
-
-img {
-	width: 150px;
-	height: 150px;
-	border-bottom: 2px solid #4677d5;
 }
