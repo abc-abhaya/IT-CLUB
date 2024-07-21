@@ -1,11 +1,17 @@
-div.main-container {
+div#main-container {
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 100px 1fr;
+	grid-template-rows: 114px 1fr;
 }
 
-.tabcontent {
+.tab-content {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+}
+
+.tab-content {
 	animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
