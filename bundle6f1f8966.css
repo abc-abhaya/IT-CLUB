@@ -275,6 +275,10 @@ footer {
 	color: #d4f1ef;
 }
 
+footer p {
+	text-decoration: underline;
+}
+
 footer > p > span.svg > * {
 	color: #fd1d1d;
 	animation: heartbeat 2s infinite;
