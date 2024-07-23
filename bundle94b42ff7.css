@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
 :root {
 	--theme-primary-color: #02699c;
 	--theme-secondary-background: #1a1a1a;
@@ -13,18 +15,16 @@ span.svg > svg {
 }
 
 * {
-	font-family: 'Eczar', serif;
-	font-optical-sizing: auto;
-	font-weight: 450;
-	font-style: normal;
 	margin: 0;
 	padding: 0;
 }
 
 body {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-style: normal;
+	font-optical-sizing: auto;
 	background-color: var(--theme-secondary-background);
 	color: var(--primary-color);
-	min-height: 100vh;
 }
 
 main {
@@ -64,7 +64,7 @@ div#main-container {
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 90px 1fr;
+	grid-template-rows: 80px 1fr;
 }
 
 #main-container > header .ribbon {
@@ -113,6 +113,9 @@ div.menu {
 	background-color: transparent;
 	border: none;
 	position: relative;
+	/* color: #d1d5db; */
+	color: #9ca3af;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nav-item button:focus {
@@ -126,7 +129,7 @@ div.menu {
 	border-radius: 3px;
 	background-color: var(--theme-primary-color);
 	position: absolute;
-	bottom: -3px;
+	bottom: -2px;
 	right: 0;
 	left: 0;
 	transform: scale(0);
@@ -135,10 +138,16 @@ div.menu {
 		0 0 40px #00ffff, /* Neon cyan outer glow */ 0 0 80px #00ffff; /* Neon cyan outer glow */
 }
 
-.nav-item:not(.media):hover button::after,
 .nav-item button:focus::after {
 	transform: scale(1, 1);
 	transition: transform 200ms linear;
+}
+
+.nav-item button:focus::after,
+.nav-item button:focus,
+.nav-item button:hover {
+	transform: scale(1.1);
+	color: #e1e4e7;
 }
 
 .nav-item.media {
@@ -182,6 +191,7 @@ div.menu {
 		#fd9d33,
 		#fcb045
 	);
+	color: white;
 	border-radius: 5px;
 	transition: all 200ms linear;
 }
@@ -235,11 +245,14 @@ abbr {
 }
 
 .desc {
-	padding: 1rem;
+	padding: 1.5rem;
+	padding-left: 2rem;
+	font-family: 'Eczar', serif;
 }
 
 h1 {
 	font-size: 4rem;
+	font-weight: 450;
 	margin-bottom: 20px;
 	line-height: 4rem;
 	text-align: left;
@@ -252,7 +265,35 @@ h1 {
 
 .desc > p {
 	text-align: justify;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
+	line-height: 1.4rem;
+	width: 80%;
+}
+
+/* =======================
+followers effect
+======================== */
+
+.follower-effect {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.follower-effect > * {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+}
+
+.follower-effect span.svg {
+	font-size: 4rem;
+}
+
+span.svg + span.stats {
+	display: inline-block;
+	font-size: 1.5rem;
 }
 
 footer {
