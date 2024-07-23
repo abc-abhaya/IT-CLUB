@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
 	--theme-primary-color: #02699c;
 	--theme-secondary-background: #1a1a1a;
@@ -14,18 +15,16 @@ span.svg > svg {
 }
 
 * {
-	font-family: 'Eczar', serif;
-	font-optical-sizing: auto;
-	font-weight: 450;
-	font-style: normal;
 	margin: 0;
 	padding: 0;
 }
 
 body {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-style: normal;
+	font-optical-sizing: auto;
 	background-color: var(--theme-secondary-background);
 	color: var(--primary-color);
-	min-height: 100vh;
 }
 
 main {

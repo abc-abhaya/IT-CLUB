@@ -16,11 +16,14 @@ abbr {
 }
 
 .desc {
-	padding: 1rem;
+	padding: 1.5rem;
+	padding-left: 2rem;
+	font-family: 'Eczar', serif;
 }
 
 h1 {
 	font-size: 4rem;
+	font-weight: 450;
 	margin-bottom: 20px;
 	line-height: 4rem;
 	text-align: left;
@@ -33,5 +36,33 @@ h1 {
 
 .desc > p {
 	text-align: justify;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
+	line-height: 1.4rem;
+	width: 80%;
+}
+
+/* =======================
+followers effect
+======================== */
+
+.follower-effect {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.follower-effect > * {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+}
+
+.follower-effect span.svg {
+	font-size: 4rem;
+}
+
+span.svg + span.stats {
+	display: inline-block;
+	font-size: 1.5rem;
 }
