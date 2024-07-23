@@ -15,9 +15,15 @@ abbr {
 	display: flex;
 }
 
-#welcome-text {
-	font-size: 2em;
+.desc {
+	padding: 1rem;
+}
+
+h1 {
+	font-size: 4rem;
 	margin-bottom: 20px;
+	line-height: 4rem;
+	text-align: left;
 }
 
 .club-img {

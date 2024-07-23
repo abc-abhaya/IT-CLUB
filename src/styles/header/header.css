@@ -65,3 +65,44 @@ div.menu {
 .nav-item.media {
 	margin-left: auto;
 }
+
+.social-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icon > * {
+	transform: scale(1, 1);
+	transition: all 200ms linear;
+}
+
+.social-icon.facebook-icon:hover > *,
+.social-icon.insta-icon:hover > * {
+	transform: scale(2, 2);
+	transition: all 200ms linear;
+}
+
+.social-icon.facebook-icon:hover > * {
+	color: #1877f2;
+}
+
+.social-icon.social-icon.insta-icon:hover > * {
+	background-image: linear-gradient(
+		to right,
+		#833ab4,
+		#b123a4,
+		#d3008c,
+		#eb0070,
+		#f90051,
+		#fe2941,
+		#ff412f,
+		#fe5618,
+		#fe711b,
+		#fd8825,
+		#fd9d33,
+		#fcb045
+	);
+	border-radius: 5px;
+	transition: all 200ms linear;
+}

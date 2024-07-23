@@ -10,6 +10,7 @@ module.exports = {
 			'./src/styles/header/header.css',
 			'./src/styles/tabs.css',
 			'./src/styles/sections/home.css',
+			'./src/styles/footer.css',
 		],
 	},
 };

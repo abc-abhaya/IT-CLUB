@@ -1,10 +1,14 @@
-let txt = `Welcome to CCRC's IT Club!`;
+let txt = `CCRC's IT Club!!!`;
 let i = 0;
 let speed = 200;
 
 export default function typeWriter() {
 	if (i < txt.length) {
-		document.getElementById('welcome-text').innerHTML += txt.charAt(i);
+		if (txt.charAt(i) == '.') {
+			document.getElementById('welcome-text').innerHTML += '<br>';
+		} else {
+			document.getElementById('welcome-text').innerHTML += txt.charAt(i);
+		}
 		i++;
 		setTimeout(typeWriter, speed);
 	} else {

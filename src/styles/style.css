@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap');
+
 :root {
 	--theme-primary-color: #02699c;
 	--theme-secondary-background: #1a1a1a;
@@ -12,6 +14,10 @@ span.svg > svg {
 }
 
 * {
+	font-family: 'Eczar', serif;
+	font-optical-sizing: auto;
+	font-weight: 450;
+	font-style: normal;
 	margin: 0;
 	padding: 0;
 }
@@ -22,4 +28,35 @@ body {
 	min-height: 100vh;
 }
 
-
+main {
+	/* background-image: linear-gradient(
+		to bottom,
+		#1a1a1a,
+		#252431,
+		#2f2f49,
+		#373b63,
+		#3d477f,
+		#3c4e8c,
+		#385699,
+		#315ea7,
+		#2662a7,
+		#1b66a6,
+		#1069a4,
+		#076ca2
+	); */
+	background-image: linear-gradient(
+		to bottom,
+		#1a1a1a,
+		#1c1c1e,
+		#1d1e23,
+		#1d2027,
+		#1d222c,
+		#1f2737,
+		#202d42,
+		#20324e,
+		#243c63,
+		#2a4679,
+		#344f90,
+		#4058a6
+	);
+}
