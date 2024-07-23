@@ -64,9 +64,8 @@ div#main-container {
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 114px 1fr;
+	grid-template-rows: 90px 1fr;
 }
-
 
 #main-container > header .ribbon {
 	--ribbon-background-color: #8083ff;
