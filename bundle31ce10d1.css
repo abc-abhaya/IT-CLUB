@@ -61,7 +61,7 @@ main {
 }
 
 div#main-container {
-	height: 100vh;
+	min-height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 80px 1fr;
@@ -247,10 +247,10 @@ abbr {
 .desc {
 	padding: 1.5rem;
 	padding-left: 2rem;
-	font-family: 'Eczar', serif;
 }
 
 h1 {
+	font-family: 'Eczar', serif;
 	font-size: 4rem;
 	font-weight: 450;
 	margin-bottom: 20px;
@@ -264,9 +264,8 @@ h1 {
 }
 
 .desc > p {
-	text-align: justify;
+	text-align: left;
 	font-size: 1.3rem;
-	line-height: 1.4rem;
 	width: 80%;
 }
 
@@ -279,6 +278,7 @@ followers effect
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	margin-top: 1rem;
 }
 
 .follower-effect > * {
@@ -289,6 +289,10 @@ followers effect
 
 .follower-effect span.svg {
 	font-size: 4rem;
+}
+
+span.title {
+	font-size: 0.8rem;
 }
 
 span.svg + span.stats {
